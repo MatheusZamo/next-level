@@ -1,13 +1,4 @@
 @import "tailwindcss";
-/*tema dark 
-div principal dark:bg-gray-900 dark:text-white 
-
-icone search dark:text-gray-400
-
-class search-bar dark:border-gray-800 dark:bg-gray-900 group-hover:dark:bg-gray-800
-
-icone cart dark:text-gray-400 
-*/
 
 @layer components {
   .search-bar {
