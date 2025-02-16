@@ -1,5 +1,37 @@
 @import "tailwindcss";
-/* src/index.css */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* 
+container: {
+    center: true,
+    padding: {
+      DEFAULT: "1rem",
+      sm: "3rem",
+    },
+  } */
+
+/*tema dark 
+div principal dark:bg-gray-900 dark:text-white 
+
+icone search dark:text-gray-400
+
+class search-bar dark:border-gray-800 dark:bg-gray-900 group-hover:dark:bg-gray-800
+
+icone cart dark:text-gray-400 
+*/
+
+@layer components {
+  .search-bar {
+    @apply w-0 group-hover:w-[300px] transition-all duration-300 
+    rounded-full group-hover:border group-hover:border-gray-500
+    px-3 py-1 focus:outline-none;
+  }
+}
+
+:root {
+  --primary: #f42c37;
+  --secondary: #f42c37;
+  --brandYellow: #fdc62e;
+  --brandGreen: #2dccgf;
+  --brandBlue: #1376f4;
+  --brandWhite: #eeeeee;
+  --darkMode: "class";
+}

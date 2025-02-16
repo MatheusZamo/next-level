@@ -1,3 +1,9 @@
-const App = () => <h1>Boilerplate Vite + React</h1>
+import { Navbar } from "./components/Navbar"
+
+const App = () => (
+  <h1>
+    <Navbar />
+  </h1>
+)
 
 export { App }
