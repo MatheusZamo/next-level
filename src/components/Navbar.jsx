@@ -1,4 +1,3 @@
-import { useState } from "react"
 import { IoMdSearch } from "react-icons/io"
 import { FaCartShopping } from "react-icons/fa6"
 import { FaCaretDown } from "react-icons/fa"
@@ -29,9 +28,7 @@ const dropdownLinks = [
   },
 ]
 
-const Navbar = () => {
-  const [theme, setTheme] = useState("light")
-
+const Navbar = ({ theme, setTheme }) => {
   return (
     <div
       className={`duration-500 relative z-40 ${
