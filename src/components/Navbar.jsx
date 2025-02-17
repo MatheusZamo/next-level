@@ -1,13 +1,32 @@
 import { useState } from "react"
 import { IoMdSearch } from "react-icons/io"
 import { FaCartShopping } from "react-icons/fa6"
+import { FaCaretDown } from "react-icons/fa"
 import { DarkMode } from "./DarkMode"
 
 const menuLinks = [
-  { id: 1, name: "Home", link: "/#" },
-  { id: 2, name: "Shop", link: "/#shop" },
-  { id: 3, name: "About", link: "/#about" },
+  { id: 1, name: "Inicio", link: "/#" },
+  { id: 2, name: "Comprar", link: "/#shop" },
+  { id: 3, name: "Sobre", link: "/#about" },
   { id: 4, name: "Blogs", link: "/#blogs" },
+]
+
+const dropdownLinks = [
+  {
+    id: 1,
+    name: "Produtos em Alta",
+    link: "/#",
+  },
+  {
+    id: 2,
+    name: "Mais Vendidos",
+    link: "/#",
+  },
+  {
+    id: 3,
+    name: "Melhores Avaliados",
+    link: "/#",
+  },
 ]
 
 const Navbar = () => {
@@ -44,6 +63,44 @@ const Navbar = () => {
                     </a>
                   </li>
                 ))}
+                <li className="relative cursor-pointer group">
+                  <a
+                    href="#"
+                    className={`flex items-center gap-[2px]
+                  font-semibold text-gray-500 py-2 ${
+                    theme === "dark" ? "hover:text-white" : "hover:text-black"
+                  }`}
+                  >
+                    Links Rapidos
+                    <span>
+                      <FaCaretDown className="group-hover:rotate-180 duration-300" />
+                    </span>
+                  </a>
+                  <div
+                    className={`absolute z-[9999] hidden 
+                  group-hover:block w-[200px] rounded-md shadow-md
+                  p-2 ${
+                    theme === "dark" ? "bg-gray-900 text-white" : "bg-white"
+                  }`}
+                  >
+                    <ul className="space-y-2">
+                      {dropdownLinks.map((link) => (
+                        <li key={link.id}>
+                          <a
+                            href={link.link}
+                            className={`text-gray-500
+                          duration-200 inline-block w-full p-2
+                          hover:bg-[var(--primary)]/20 rounded-md font-semibold ${
+                            theme === "dark" ? "hover:text-white" : ""
+                          }`}
+                          >
+                            {link.name}
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </li>
               </ul>
             </div>
           </div>
