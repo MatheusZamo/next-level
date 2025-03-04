@@ -1,4 +1,5 @@
 import Slider from "react-slick"
+import { Button } from "./Button"
 
 const HeroData = [
   {
@@ -85,13 +86,11 @@ const Hero = ({ theme }) => {
                     {data.title2}
                   </h1>
                   <div>
-                    <button
-                      className="bg-[var(--primary)] text-white
-                    cursor-pointer hover:scale-105 duration-300 py-2 px-8 rounded-full
-                    relative z-10"
-                    >
-                      Shop By Category
-                    </button>
+                    <Button
+                      bgColor={"bg-[#f42c37]"}
+                      textColor={"text-white"}
+                      text={"Shop By Category"}
+                    />
                   </div>
                 </div>
                 <div className="order-1 sm:order-2">
@@ -99,7 +98,7 @@ const Hero = ({ theme }) => {
                     <img
                       src={data.img}
                       alt=""
-                      className="w-[300px] h-[300px] sm:h-[450px]
+                      className="w-[300px] h-[300px]
                         sm:scale-105 sm:w-[450px] sm:h-[450px] lg:scale-110 object-contain
                         mx-auto drop-shadow-[-8px_4px_6px_rgba(0,0,0,.4)]
                         relative z-40"
