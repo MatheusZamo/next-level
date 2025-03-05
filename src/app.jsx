@@ -7,7 +7,7 @@ import { Services } from "./components/Services"
 import { Banner } from "./components/Banner"
 import { Products } from "./components/Products"
 
-const BannerData = {
+const banner1 = {
   discount: "30% OFF",
   title: "Fine Smile",
   date: "10 Jan to 28 Jan",
@@ -17,6 +17,18 @@ const BannerData = {
   title4:
     "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
   bgColor: "#f42c37",
+}
+
+const banner2 = {
+  discount: "30% OFF",
+  title: "Happy Hours",
+  date: "14 Jan to 28 Jan",
+  image: "smartwatch.png",
+  title2: "Smart Solo",
+  title3: "Winter Sale",
+  title4:
+    "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+  bgColor: "#2DCC6F",
 }
 
 const App = () => {
@@ -31,8 +43,9 @@ const App = () => {
       <Category />
       <Category2 />
       <Services />
-      <Banner data={BannerData} />
+      <Banner data={banner1} />
       <Products />
+      <Banner data={banner2} />
     </div>
   )
 }
