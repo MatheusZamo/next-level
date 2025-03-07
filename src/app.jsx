@@ -6,6 +6,7 @@ import { Category2 } from "./components/Category2"
 import { Services } from "./components/Services"
 import { Banner } from "./components/Banner"
 import { Products } from "./components/Products"
+import { Blogs } from "./components/Blogs"
 
 const banner1 = {
   discount: "30% OFF",
@@ -46,6 +47,7 @@ const App = () => {
       <Banner data={banner1} />
       <Products />
       <Banner data={banner2} />
+      <Blogs theme={theme} />
     </div>
   )
 }
