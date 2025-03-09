@@ -4,28 +4,28 @@ import { Button } from "./Button"
 const HeroData = [
   {
     id: 1,
-    img: "headphone.png",
-    subtitle: "Beats Solo",
-    title: "Wireless",
-    title2: "Headphone",
+    img: "seriesx.png",
+    subtitle: "Console",
+    title: "Microsoft",
+    title2: "Series X",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley",
   },
   {
     id: 2,
-    img: "vr.png",
-    subtitle: "Beats Solo",
-    title: "Wireless",
-    title2: "Virtual",
+    img: "play5.png",
+    subtitle: "Console",
+    title: "Sony",
+    title2: "Play 5",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley",
   },
   {
     id: 3,
-    img: "macbook.png",
-    subtitle: "Beats Solo",
-    title: "Wireless",
-    title2: "Laptops",
+    img: "switch.png",
+    subtitle: "Console",
+    title: "Nintendo",
+    title2: "Switch",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley",
   },
@@ -60,7 +60,7 @@ const Hero = ({ theme }) => {
         <Slider {...settings} className="p-[1rem] smp-[3rem] pb-8 sm:pd-0">
           {HeroData.map((data) => (
             <div key={data.id}>
-              <div className="grid grid-cols-1 sm:grid-cols-2 flex justify-center items-center">
+              <div className="grid grid-cols-1 sm:grid-cols-2 justify-center items-center">
                 <div
                   className="flex flex-col justify-center
                 gap-4 sm:pl-3 pt-12 sm:pt-0 text-center
@@ -103,7 +103,7 @@ const Hero = ({ theme }) => {
                     <Button
                       bgColor={"bg-[#f42c37]"}
                       textColor={"text-white"}
-                      text={"Shop By Category"}
+                      text={"Detalhes do Produto"}
                     />
                   </div>
                 </div>
