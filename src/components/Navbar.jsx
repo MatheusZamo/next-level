@@ -40,7 +40,7 @@ const Navbar = ({ theme, setTheme }) => {
           <div className="flex items-center gap-4">
             <a
               href="#"
-              className=" text-[var(--primary)] font-semibold tracking-widest text-2xl uppercase sm:text-3xl"
+              className=" text-[#f42c37] font-semibold tracking-widest text-2xl uppercase sm:text-3xl"
             >
               Logo
             </a>
@@ -87,7 +87,7 @@ const Navbar = ({ theme, setTheme }) => {
                             href={link.link}
                             className={`text-gray-500
                           duration-200 inline-block w-full p-2
-                          hover:bg-[var(--primary)]/20 rounded-md font-semibold ${
+                          hover:bg-[#f42c37]/20 rounded-md font-semibold ${
                             theme === "dark" ? "hover:text-white" : ""
                           }`}
                           >
@@ -110,7 +110,7 @@ const Navbar = ({ theme, setTheme }) => {
               />
               <IoMdSearch
                 className={`text xl absolute top-1/2 -translate-y-1/2 right-3
-              group-hover:text-[var(--primary)] 
+              group-hover:text-[#f42c37] 
               duration-200 cursor-pointer ${
                 theme === "dark" ? "text-gray-400" : "text-gray-600 "
               }`}

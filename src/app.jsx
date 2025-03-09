@@ -8,6 +8,7 @@ import { Banner } from "./components/Banner"
 import { Products } from "./components/Products"
 import { Blogs } from "./components/Blogs"
 import { Partners } from "./components/Partners"
+import { Footer } from "./components/Footer"
 
 const banner1 = {
   discount: "30% OFF",
@@ -50,6 +51,7 @@ const App = () => {
       <Banner data={banner2} />
       <Blogs theme={theme} />
       <Partners theme={theme} />
+      <Footer theme={theme} />
     </div>
   )
 }
