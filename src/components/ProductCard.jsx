@@ -34,28 +34,28 @@ const products = [
     img: "p-5.jpg",
     title: "Boat Headphone",
     price: "120",
-    aosDelay: "0",
+    aosDelay: "800",
   },
   {
     id: 6,
     img: "p-9.jpg",
     title: "Rocky Mountain",
     price: "420",
-    aosDelay: "200",
+    aosDelay: "1000",
   },
   {
     id: 7,
     img: "p-7.jpg",
     title: "Goggles",
     price: "320",
-    aosDelay: "400",
+    aosDelay: "1200",
   },
   {
     id: 8,
     img: "p-5.jpg",
     title: "Printed",
     price: "220",
-    aosDelay: "600",
+    aosDelay: "1400",
   },
 ]
 
@@ -67,7 +67,12 @@ const ProductCard = () => {
             sm:grid-cols-2 md:grid-cols-4 gap-5"
       >
         {products.map((product) => (
-          <li className="group" key={product.id}>
+          <li
+            data-aos="fade-up"
+            data-aos-delay={product.aosDelay}
+            className="group"
+            key={product.id}
+          >
             <div className="relative">
               <img
                 src={product.img}

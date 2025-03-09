@@ -7,6 +7,7 @@ const blogData = [
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry, Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     published: "Jan 20, 2024 by Dilshad",
     image: "blog-1.jpg",
+    aosDelay: "0",
   },
   {
     title: "How to choose perfect gadget",
@@ -14,6 +15,7 @@ const blogData = [
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry, Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     published: "Jan 20, 2024 by Satya",
     image: "blog-2.jpg",
+    aosDelay: "200",
   },
   {
     title: "How to choose perfect VR headset",
@@ -21,6 +23,7 @@ const blogData = [
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry, Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     published: "Jan 20, 2024 by Sabir",
     image: "blog-3.jpg",
+    aosDelay: "400",
   },
 ]
 
@@ -35,6 +38,8 @@ const Blogs = ({ theme }) => {
         >
           {blogData.map((news) => (
             <li
+              data-aos="fade-up"
+              data-aos-delay={news.aosDelay}
               className={theme === "dark" ? "bg-gray-900" : "bg-white"}
               key={news.title}
             >

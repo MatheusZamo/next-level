@@ -3,6 +3,7 @@ const brands = ["br-1.png", "br-2.png", "br-3.png", "br-4.png", "br-5.png"]
 const Partners = ({ theme }) => {
   return (
     <div
+      data-aos="zoom-out"
       className={`py-8 mt-24 hidden md:block
     ${theme === "dark" ? "bg-white/10" : "bg-gray-200"}`}
     >

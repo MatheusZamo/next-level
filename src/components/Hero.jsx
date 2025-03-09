@@ -67,25 +67,39 @@ const Hero = ({ theme }) => {
                 sm:text-left order-2 sm:order-1 relative z-10"
                 >
                   <p
+                    data-aos="zoom"
+                    data-aos-duration="700"
+                    data-aos-once="true"
                     className="text-2xl sm:text-6xl
                   lg:text-2xl font-bold"
                   >
                     {data.subtitle}
                   </p>
                   <h2
+                    data-aos="zoom"
+                    data-aos-duration="700"
+                    data-aos-once="true"
                     className="text-5xl sm:text-6xl
                   lg:text-7xl font-bold"
                   >
                     {data.title}
                   </h2>
                   <h1
+                    data-aos="zoom"
+                    data-aos-duration="500"
+                    data-aos-once="true"
                     className={`text-5xl uppercase 
                   sm:text-[80px] md:text-[100px] xl:text-[150px] font-bold
                   ${theme === "dark" ? "text-white/5" : "text-white"}`}
                   >
                     {data.title2}
                   </h1>
-                  <div>
+                  <div
+                    data-aos="fade-up"
+                    data-aos-offset="0"
+                    data-aos-duration="500"
+                    data-aos-delay="300"
+                  >
                     <Button
                       bgColor={"bg-[#f42c37]"}
                       textColor={"text-white"}
@@ -94,7 +108,11 @@ const Hero = ({ theme }) => {
                   </div>
                 </div>
                 <div className="order-1 sm:order-2">
-                  <div>
+                  <div
+                    data-aos="zoom-in"
+                    data-aos-once="true"
+                    className="relative z-10"
+                  >
                     <img
                       src={data.img}
                       alt=""

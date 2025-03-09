@@ -11,16 +11,21 @@ const Banner = ({ data }) => {
         items-center text-white rounded-3xl"
         >
           <div className="p-6 sm:p-8">
-            <p className="text-sm">{data.discount}</p>
+            <p data-aos="zoom-out" className="text-sm">
+              {data.discount}
+            </p>
             <h1
+              data-aos="zoom-out"
               className="uppercase text-4xl lg:text-7xl
                 font-bold"
             >
               {data.title}
             </h1>
-            <p className="text-sm">{data.date}</p>
+            <p data-aos="fade-up" className="text-sm">
+              {data.date}
+            </p>
           </div>
-          <div className="h-full flex items-center">
+          <div data-aos="zoom-in" className="h-full flex items-center">
             <img
               src={data.image}
               alt=""
@@ -32,11 +37,19 @@ const Banner = ({ data }) => {
             className="flex flex-col justify-center gap-4 
           p-6 sm:p-8"
           >
-            <p className="font-bold text-xl">{data.title2}</p>
-            <p className="text-3xl font-bold sm:text-5xl">{data.title3}</p>
-            <p className="text-sm tracking-wide leading-5">{data.title4}</p>
+            <p data-aos="zoom-out" className="font-bold text-xl">
+              {data.title2}
+            </p>
+            <p data-aos="fade-up" className="text-3xl font-bold sm:text-5xl">
+              {data.title3}
+            </p>
+            <p data-aos="fade-up" className="text-sm tracking-wide leading-5">
+              {data.title4}
+            </p>
             <div>
               <button
+                data-aos="fade-up"
+                data-aos-offset="0"
                 className="bg-white py-2 px-4 rounded-full"
                 style={{ color: data.bgColor }}
               >

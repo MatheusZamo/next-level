@@ -65,7 +65,7 @@ const Category = () => {
             />
           </div>
           <div
-            className="col-span-2 py-10 pl-5 bg-gradient-to-br from-[#f42c37]
+            className="sm:col-span-2 py-10 pl-5 bg-gradient-to-br from-[#f42c37]
           to-[#f42c37]/90 text-white rounded-3xl relative h-[320px]
           flex items-end"
           >
