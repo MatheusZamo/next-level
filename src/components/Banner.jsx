@@ -12,17 +12,17 @@ const Banner = ({ data }) => {
         >
           <div className="p-6 sm:p-8">
             <p data-aos="zoom-out" className="text-sm">
-              {data.discount}
+              60% De Desconto
             </p>
             <h1
               data-aos="zoom-out"
               className="uppercase text-4xl lg:text-7xl
                 font-bold"
             >
-              {data.title}
+              BLACK FRIDAY
             </h1>
             <p data-aos="fade-up" className="text-sm">
-              {data.date}
+              28 Nov a 01 Dez
             </p>
           </div>
           <div data-aos="zoom-in" className="h-full flex items-center">
@@ -38,22 +38,22 @@ const Banner = ({ data }) => {
           p-6 sm:p-8"
           >
             <p data-aos="zoom-out" className="font-bold text-xl">
-              {data.title2}
+              {data.title}
             </p>
             <p data-aos="fade-up" className="text-3xl font-bold sm:text-5xl">
-              {data.title3}
+              Domine o Jogo
             </p>
             <p data-aos="fade-up" className="text-sm tracking-wide leading-5">
-              {data.title4}
+              {data.subtitle}
             </p>
             <div>
               <button
                 data-aos="fade-up"
                 data-aos-offset="0"
-                className="bg-white py-2 px-4 rounded-full"
+                className="bg-white py-2 px-4 rounded-full cursor-pointer"
                 style={{ color: data.bgColor }}
               >
-                Shop Now
+                Comprar
               </button>
             </div>
           </div>
