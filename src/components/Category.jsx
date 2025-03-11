@@ -9,85 +9,58 @@ const Category = () => {
             lg:grid-cols-4 gap-8"
         >
           <div
-            className="py-10 pl-5 bg-gradient-to-br from-black/90
-          to-black/70 text-white rounded-3xl relative h-[320px]
+            className="sm:col-span-2 py-10 pl-5 bg-gradient-to-br from-[#1376f4]
+          to-[#1376f4]/90 text-white rounded-3xl relative h-[320px]
           flex items-end"
           >
             <div>
               <div className="mb-4">
-                <p className="mb-[2px] text-gray-400">Enjoy</p>
-                <p className="text-2xl font-semibold mb-[2px]">With</p>
-                <p
-                  className="text-4xl xl:text-5xl font-bold
-                opacity-20 mb-2"
-                >
-                  Earphone
-                </p>
-                <Button
-                  bgColor={"bg-[#f42c37]"}
-                  textColor={"text-white"}
-                  text={"Browse"}
-                />
-              </div>
-            </div>
-            <img
-              src="earphone.png"
-              alt=""
-              className="w-[320px] absolute bottom-0"
-            />
-          </div>
-          <div
-            className="py-10 pl-5 bg-gradient-to-br from-[#fdc62e]
-          to-[#fdc62e]/90 text-white rounded-3xl relative h-[320px]
-          flex items-end"
-          >
-            <div>
-              <div className="mb-4">
-                <p className="mb-[2px] text-white">Enjoy</p>
-                <p className="text-2xl font-semibold mb-[2px]">With</p>
+                <p className="mb-[2px] text-white">Console</p>
+                <p className="text-2xl font-semibold mb-[2px]">Sony</p>
                 <p
                   className="text-4xl xl:text-5xl font-bold
                 opacity-40 mb-2"
                 >
-                  Gadget
+                  Playstation 4
                 </p>
                 <Button
                   bgColor={"bg-white"}
-                  textColor={"text-[#fdc62e]"}
-                  text={"Browse"}
+                  textColor={"text-[#1376f4]"}
+                  text={"Detalhes do Produto"}
                 />
               </div>
             </div>
             <img
-              src="watch.png"
+              src="gaming.png"
               alt=""
-              className="w-[320px] absolute -right-4 lg:top-[40px]"
+              className="w-[250px] absolute top-1/2 -translate-y-1/2
+              -right-0"
             />
           </div>
           <div
-            className="sm:col-span-2 py-10 pl-5 bg-gradient-to-br from-[#f42c37]
-          to-[#f42c37]/90 text-white rounded-3xl relative h-[320px]
+            className="sm:col-span-2 py-10 pl-5 bg-gradient-to-br from-[#2DCC6F]/90
+          to-[#2DCC6F]/90 text-white rounded-3xl relative h-[320px]
           flex items-end"
           >
             <div>
               <div className="mb-4">
-                <p className="mb-[2px] text-white">Enjoy</p>
-                <p className="text-2xl font-semibold mb-[2px]">With</p>
+                <p className="mb-[2px] text-white">Console</p>
+                <p className="text-2xl font-semibold mb-[2px]">Microsoft</p>
                 <p
                   className="text-4xl xl:text-5xl font-bold
                 opacity-40 mb-2"
                 >
-                  Laptop
+                  Xbox Series S
                 </p>
                 <Button
                   bgColor={"bg-white"}
-                  textColor={"text-[#f42c37]"}
-                  text={"Browse"}
+                  textColor={"text-[#2DCC6F]"}
+                  text={"Detalhes do Produto"}
                 />
               </div>
             </div>
             <img
-              src="macbook.png"
+              src="seriess.png"
               alt=""
               className="w-[250px] absolute top-1/2 -translate-y-1/2
               -right-0"
