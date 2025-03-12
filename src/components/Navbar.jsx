@@ -40,9 +40,9 @@ const Navbar = ({ theme, setTheme }) => {
           <div className="flex items-center gap-4">
             <a
               href="#"
-              className=" text-[#f42c37] font-semibold tracking-widest text-2xl uppercase sm:text-3xl"
+              className=" text-[#f42c37] font-semibold tracking-widest text-2xl sm:text-3xl"
             >
-              Logo
+              Next Level
             </a>
             <div className="hidden lg:block">
               <ul className="flex items-center gap-4">
