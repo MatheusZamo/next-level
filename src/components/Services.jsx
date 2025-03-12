@@ -14,8 +14,8 @@ const ServiceData = [
         text-[#f42c37]"
       />
     ),
-    title: "Free Shipping",
-    description: "Free Shipping On All Order",
+    title: "Frete grátis",
+    description: "Frete grátis em todos os pedidos",
   },
   {
     id: 2,
@@ -25,8 +25,8 @@ const ServiceData = [
         text-[#f42c37]"
       />
     ),
-    title: "Safe Money",
-    description: "30 Days Money Back",
+    title: "Dinheiro Seguro",
+    description: "30 Dias de Reembolso",
   },
   {
     id: 3,
@@ -36,8 +36,8 @@ const ServiceData = [
         text-[#f42c37]"
       />
     ),
-    title: "Secure Payment",
-    description: "All Payment Secure",
+    title: "Pagamento Seguro",
+    description: "Todos os Pagamentos Seguros",
   },
   {
     id: 4,
@@ -47,15 +47,15 @@ const ServiceData = [
         text-[#f42c37]"
       />
     ),
-    title: "Online Supoort 24/7",
-    description: "Technical Support 24/7",
+    title: "Suporte on-line",
+    description: "Suporte técnico 24hrs",
   },
 ]
 
 const Services = () => {
   return (
     <div>
-      <div className="p-[1rem] smp-[3rem] my-14 md:my-20">
+      <div className="p-[1rem] smp-[3rem] my-14 md:my-20 ml-7">
         <ul
           className="grid grid-cols-2 lg:grid-cols-4 gap-4
         gap-y-8"
