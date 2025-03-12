@@ -46,7 +46,6 @@ const Hero = ({ theme }) => {
   }
   return (
     <div className="p-[1rem] smp-[3rem]">
-      {/* flex justify-center items-center */}
       <div
         className={`overflow-hidden rounded-3xl min-h-[550px]
       sm:min-h-[450px] bg-gradient-to-r 
@@ -56,8 +55,7 @@ const Hero = ({ theme }) => {
            : "from-gray-300/80 to-gray-100"
        } `}
       >
-        <div></div>
-        <Slider {...settings} className="p-[1rem] smp-[3rem] pb-8 sm:pd-0">
+        <Slider {...settings} className="p-[1rem] smp-[3rem] sm:pd-0">
           {HeroData.map((data) => (
             <div key={data.id}>
               <div className="grid grid-cols-1 sm:grid-cols-2 justify-center items-center">

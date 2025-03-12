@@ -2,27 +2,27 @@ import { Heading } from "./Heading"
 
 const blogData = [
   {
-    title: "How to choose perfect smartwatch",
+    title: "PS5 Pro terá grande evolução do PSSR em 2026 graças a AMD",
     subtitle:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry, Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    published: "Jan 20, 2024 by Dilshad",
-    image: "blog-1.jpg",
+      "Num mercado cada vez mais “fértil” para tecnologias de inteligência artificial que consigam melhorar drasticamente a qualidade dos jogos, a Sony está fazendo uma aposta com o PS5 Pro e o seu PSSR,.",
+    published: "Jan 20, 2025 Por Rafael",
+    image: "news1.jpg",
     aosDelay: "0",
   },
   {
-    title: "How to choose perfect gadget",
+    title: "Portátil do Xbox chega no fim do ano e nova geração em 2027",
     subtitle:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry, Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    published: "Jan 20, 2024 by Satya",
-    image: "blog-2.jpg",
+      "Parece que o Xbox anda em alta com rumores e notícias quentes. Após muitos boatos circularem sobre o próximo console da marca",
+    published: "Fev 02, 2025 Por Sara",
+    image: "news2.jpg",
     aosDelay: "200",
   },
   {
-    title: "How to choose perfect VR headset",
+    title: "Switch 2 ganha informações inéditas e oficiais do hardware",
     subtitle:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry, Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    published: "Jan 20, 2024 by Sabir",
-    image: "blog-3.jpg",
+      "Sem dúvidas, uma das grandes expectativas de 2025 é a chegada do Switch 2 que, apesar de ainda estar sem data e muitos detalhes oficiais divulgados",
+    published: "Mar 06, 2025 Por Fernando",
+    image: "news3.jpg",
     aosDelay: "400",
   },
 ]
@@ -31,7 +31,7 @@ const Blogs = ({ theme }) => {
   return (
     <div className="my-12">
       <div className="p-[1rem] smp-[3rem]">
-        <Heading title="Recent News" subtitle="Explore Our Blogs" />
+        <Heading title="Blog" subtitle="Explore Nosso Blog" />
         <ul
           className="grid grid-cols-1 gap-6 gap-y-8
         sm:grid-cols-2 md:grid-cols-3 sm:gap-4 md:gap-7"

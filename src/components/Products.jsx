@@ -5,7 +5,7 @@ const Products = () => {
   return (
     <div>
       <div className="p-[1rem] smp-[3rem]">
-        <Heading title={"Our Products"} subtitle={"Explore Our Products"} />
+        <Heading title={"Jogos"} subtitle={"Explore Nossos Jogos"} />
         <ProductCard />
       </div>
     </div>

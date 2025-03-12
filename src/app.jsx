@@ -6,7 +6,6 @@ import { Services } from "./components/Services"
 import { Banner } from "./components/Banner"
 import { Products } from "./components/Products"
 import { Blogs } from "./components/Blogs"
-import { Partners } from "./components/Partners"
 import { Footer } from "./components/Footer"
 import AOS from "aos"
 import "aos/dist/aos.css"
@@ -52,7 +51,6 @@ const App = () => {
       <Products />
       <Banner data={banner2} />
       <Blogs theme={theme} />
-      <Partners theme={theme} />
       <Footer theme={theme} />
     </div>
   )
