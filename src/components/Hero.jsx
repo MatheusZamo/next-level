@@ -12,20 +12,20 @@ const HeroData = [
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley",
   },
   {
+    id: 3,
+    img: "nintendo.png",
+    subtitle: "Console",
+    title: "Nintendo",
+    title2: "Switch",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley",
+  },
+  {
     id: 2,
     img: "play5.png",
     subtitle: "Console",
     title: "Sony",
     title2: "Play 5",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley",
-  },
-  {
-    id: 3,
-    img: "switch.png",
-    subtitle: "Console",
-    title: "Nintendo",
-    title2: "Switch",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley",
   },
