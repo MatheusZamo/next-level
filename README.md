@@ -1,8 +1,14 @@
-# React + Vite
+# Next Level 🎮
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bem-vindo ao **Next Level**, um e-commerce de games focado na venda de jogos e consoles! 🕹️🔥
 
-Currently, two official plugins are available:
+## 🚀 Tecnologias Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React.js** ⚛️ - Biblioteca JavaScript para criação da interface do usuário.
+- **Tailwind CSS** 🎨 - Framework CSS para estilização rápida e eficiente.
+
+![Image](https://github.com/user-attachments/assets/be2a72fb-1ac9-4ac9-9f26-463e5aa365dc)
+
+![Image](https://github.com/user-attachments/assets/a3040bac-4e74-4bb5-9e38-92113ea3cd88)
+
+![Image](https://github.com/user-attachments/assets/4d2dcf08-512b-4202-a5c6-e599b3ebce56)
