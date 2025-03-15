@@ -83,9 +83,6 @@ const Hero = ({ theme }) => {
                     {data.title}
                   </h2>
                   <h1
-                    data-aos="zoom"
-                    data-aos-duration="500"
-                    data-aos-once="true"
                     className={`text-5xl uppercase 
                   sm:text-[80px] md:text-[100px] xl:text-[150px] font-bold
                   ${theme === "dark" ? "text-white/5" : "text-white"}`}
