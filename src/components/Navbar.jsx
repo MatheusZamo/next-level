@@ -5,7 +5,7 @@ import { DarkMode } from "./DarkMode"
 
 const menuLinks = [
   { id: 1, name: "Inicio", link: "/#" },
-  { id: 2, name: "Comprar", link: "/#shop" },
+  { id: 2, name: "Categorias", link: "/#shop" },
   { id: 3, name: "Sobre", link: "/#about" },
   { id: 4, name: "Blogs", link: "/#blogs" },
 ]

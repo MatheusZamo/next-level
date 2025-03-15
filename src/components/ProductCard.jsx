@@ -20,7 +20,7 @@ const products = [
   {
     id: 3,
     img: "witcher.jpeg",
-    title: "Forza Horizon 5 Edição Padrão",
+    title: "The Witcher 3: Wild Hunt",
     price: "209,00",
     discountedPrice: "169,00",
     aosDelay: "400",
