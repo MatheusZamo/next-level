@@ -1,3 +1,5 @@
+import { useContext } from "react"
+import { ThemeContext } from "../context/theme"
 import { Heading } from "./Heading"
 
 const blogData = [
@@ -27,7 +29,9 @@ const blogData = [
   },
 ]
 
-const Blogs = ({ theme }) => {
+const Blogs = () => {
+  const { theme } = useContext(ThemeContext)
+
   return (
     <div className="my-12">
       <div className="p-[1rem] smp-[3rem]">

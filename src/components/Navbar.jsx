@@ -2,6 +2,8 @@ import { IoMdSearch } from "react-icons/io"
 import { FaCartShopping } from "react-icons/fa6"
 import { FaCaretDown } from "react-icons/fa"
 import { DarkMode } from "./DarkMode"
+import { useContext } from "react"
+import { ThemeContext } from "../context/theme"
 
 const menuLinks = [
   { id: 1, name: "Inicio", link: "/#" },
@@ -28,7 +30,9 @@ const dropdownLinks = [
   },
 ]
 
-const Navbar = ({ theme, setTheme }) => {
+const Navbar = () => {
+  const { theme } = useContext(ThemeContext)
+
   return (
     <div
       className={`duration-500 relative z-40 ${
@@ -132,7 +136,7 @@ const Navbar = ({ theme, setTheme }) => {
               </div>
             </button>
             <div>
-              <DarkMode theme={theme} setTheme={setTheme} />
+              <DarkMode />
             </div>
           </div>
         </div>

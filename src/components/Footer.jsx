@@ -1,3 +1,5 @@
+import { useContext } from "react"
+import { ThemeContext } from "../context/theme"
 import {
   FaFacebook,
   FaInstagram,
@@ -25,7 +27,9 @@ const footerLinks = [
   },
 ]
 
-const Footer = ({ theme }) => {
+const Footer = () => {
+  const { theme } = useContext(ThemeContext)
+
   return (
     <div className={theme === "dark" ? "bg-gray-950" : "bg-gray-200"}>
       <div className="p-[1rem] smp-[3rem]">

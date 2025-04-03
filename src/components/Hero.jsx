@@ -1,5 +1,7 @@
 import Slider from "react-slick"
 import { Button } from "./Button"
+import { useContext } from "react"
+import { ThemeContext } from "../context/theme"
 
 const HeroData = [
   {
@@ -31,7 +33,9 @@ const HeroData = [
   },
 ]
 
-const Hero = ({ theme }) => {
+const Hero = () => {
+  const { theme } = useContext(ThemeContext)
+
   const settings = {
     dots: false,
     arrows: false,
@@ -44,6 +48,7 @@ const Hero = ({ theme }) => {
     pauseOnHover: false,
     pauseOnFocus: true,
   }
+
   return (
     <div className="p-[1rem] smp-[3rem]">
       <div

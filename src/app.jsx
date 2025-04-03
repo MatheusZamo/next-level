@@ -9,6 +9,7 @@ import { Blogs } from "./components/Blogs"
 import { Footer } from "./components/Footer"
 import AOS from "aos"
 import "aos/dist/aos.css"
+import { ThemeContext } from "./context/theme"
 
 const banner1 = {
   image: "controlx.png",
@@ -39,20 +40,22 @@ const App = () => {
     AOS.refresh()
   }, [])
   return (
-    <div
-      className={`duration-200 overflow-hidden
-      ${theme === "light" ? "bg-white" : "bg-gray-900 text-white"}`}
-    >
-      <Navbar theme={theme} setTheme={setTheme} />
-      <Hero theme={theme} />
-      <Category />
-      <Services />
-      <Banner data={banner1} />
-      <Products />
-      <Banner data={banner2} />
-      <Blogs theme={theme} />
-      <Footer theme={theme} />
-    </div>
+    <ThemeContext.Provider value={{ theme, setTheme }}>
+      <div
+        className={`duration-200 overflow-hidden
+  ${theme === "light" ? "bg-white" : "bg-gray-900 text-white"}`}
+      >
+        <Navbar />
+        <Hero />
+        <Category />
+        <Services />
+        <Banner data={banner1} />
+        <Products />
+        <Banner data={banner2} />
+        <Blogs />
+        <Footer />
+      </div>
+    </ThemeContext.Provider>
   )
 }
 

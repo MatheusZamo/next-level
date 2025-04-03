@@ -1,4 +1,8 @@
-const DarkMode = ({ theme, setTheme }) => {
+import { useContext } from "react"
+import { ThemeContext } from "../context/theme"
+
+const DarkMode = () => {
+  const { theme, setTheme } = useContext(ThemeContext)
   return (
     <div className="relative">
       <img
